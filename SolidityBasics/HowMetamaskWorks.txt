@@ -1,0 +1,20 @@
+Before we continue, let's have a quick look at how Metamask works behind the scenes, because maybe
+that's not exactly clear how that magic trickery here actually works, that metamask gets access to the blockchain.
+Does it have its own node or how does it work?
+And so what I kind of want to answer in these few slides is what's that magic box?
+How does that how does that how does that even work?
+So there is no magic trickery.
+There is a service provider called Infura, or at least it was I'm not sure if they still with Infura,
+but I think they are still within Infura and is running its own blockchain nodes internally in the data centers.
+And they have convenient access to those blockchain nodes and the blockchain nodes itself, they are
+storing or they are syncing the data with the blockchain and always keeping it up to date. And then you have an RPC.
+A method or a REST interface or a web socket interface to actually connect to those blockchain nodes.
+But it's going by Infura.
+There is a couple of others that are not popping up every now and then.
+Alchemy is one and there are more of them.
+So running a blockchain or keeping it in sync is really a pain sometimes, especially if you want to
+have a high degree of uptime, a load balance for many users.
+So that one is totally abstracted away, all that metamask as it's conveniently connecting to Infura data centers.
+I think they're running on AWS, but not sure and then connecting the blockchain nodes
+there and Infura is doing the heavy lifting.
+
